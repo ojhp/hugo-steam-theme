@@ -7,6 +7,12 @@
 		    {{ with .Site.Params.github }}
 		    <a href="//github.com/{{ . }}" target="_blank" title="GitHub"><i class="fa fa-2x fa-fw fa-github"></i> <span class="hidden">GitHub</span></a>&nbsp;
 		    {{ end }}
+		    {{ with .Site.Params.flickr }}
+		    <a href="//flickr.com/photos/{{ . }}" target="_blank" title="Flickr"><i class="fa fa-2x fa-fw fa-flickr"></i> <span class="hidden">Flickr</span></a>&nbsp;
+		    {{ end }}
+		    {{ with .Site.Params.keybase }}
+		    <a href="//keybase.io/{{ . }}" target="_blank" title="Keybase"><i class="fa fa-2x fa-fw fa-key"></i> <span class="hidden">Keybase</span></a>&nbsp;
+		    {{ end }}
 		    <a href="{{ .RSSlink }}" target="_blank" title="RSS"><i class="fa fa-2x fa-fw fa-rss"></i> <span class="hidden">RSS</span></a>
 		</section>
 
